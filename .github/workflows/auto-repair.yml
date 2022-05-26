@@ -1,7 +1,9 @@
-name: Vulcan Demo
+name: auto repair
 
 on:
-  workflow_dispatch:
+  workflow_run:
+        workflows: [regression test]
+        types: [completed]
 
 jobs:
   vulcan:

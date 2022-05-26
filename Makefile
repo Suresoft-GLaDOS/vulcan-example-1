@@ -11,7 +11,7 @@ example.o: example.c
 	$(CC) $(CFLAGS) -o example.o -c example.c 
 
 test.o: test.c
-	$(CC) $(CFLAGS) -o test.o -c test.c
+	$(CC) -o test.o -c test.c
 
 clean:
 	rm -f *.gcov

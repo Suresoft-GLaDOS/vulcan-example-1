@@ -6,13 +6,13 @@ int mid(int x, int y, int z){
         if (x < y) {
             ret = y;
         } else if (x < z) {
-            ret = x;
+            ret = x; // buggy line
         }
     } else {
         if (x > y) {
             ret = y;
         } else if (x > z) {
-            ; // fix here
+            ret = x;
         }
     }
     return ret;

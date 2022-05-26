@@ -2,7 +2,8 @@
 
 int mid(int x, int y, int z){
     int ret = z;
-  ret = x;
+  ret = (ret);
+
 if (y < z) {
         if (x < y) {
             ret = y;

@@ -1,8 +1,11 @@
 name: regression test
 
 on:
-    # push:
-    workflow_dispatch:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
             
 jobs:
     checkout:
